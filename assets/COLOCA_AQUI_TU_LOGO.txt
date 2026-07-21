@@ -1,0 +1,1 @@
+Guarda el logo de la empresa en esta carpeta con el nombre exacto: logo.png

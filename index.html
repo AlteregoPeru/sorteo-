@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Participa en la campaña promocional de ALTER EGO">
+    <meta name="theme-color" content="#04100a">
+    <title>Participa y gana | ALTER EGO</title>
+    <link rel="icon" type="image/png" href="./archivos/Logo Negativo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=20260720-safari-mobile-clean-1">
+</head>
+<body>
+    <main class="campaign-page">
+        <section class="glass campaign-card" aria-labelledby="campaignTitle">
+            <header class="campaign-header">
+                <div class="brand-medallion" aria-label="ALTER EGO">
+                    <img src="./archivos/logoblanco.png" alt="ALTER EGO" class="brand-logo">
+                    <small>BEAUTY THAT EMPOWERS</small>
+                </div>
+                <div class="ornament" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+                <h1 id="campaignTitle">PARTICIPA Y GANA</h1>
+                <p>Completa los pasos y registra tus datos para participar.</p>
+            </header>
+
+            <section class="steps-box" aria-labelledby="stepsTitle">
+                <div class="section-title"><span></span><h2 id="stepsTitle">PASOS PARA PARTICIPAR</h2><span></span></div>
+                <ol class="steps-list">
+                    <li><strong>1</strong><p><b>Regístrate</b><span>Completa tus datos en el formulario.</span></p></li>
+                    <li><strong>2</strong><p><b>Síguenos</b><span>Sigue a <a id="instagramLink" href="#" target="_blank" rel="noopener">@alteregoperu</a>.</span></p></li>
+                    <li><strong>3</strong><p><b>Comparte</b><span>Comparte la campaña con 3 amigos y escribe sus Instagram.</span></p></li>
+                </ol>
+            </section>
+
+            <form id="registrationForm" class="campaign-form" novalidate>
+                <div class="field full">
+                    <label for="fullName">Nombre completo</label>
+                    <div class="input-wrap">
+                        <span class="field-icon" aria-hidden="true">♙</span>
+                        <input id="fullName" name="fullName" type="text" maxlength="160" autocomplete="name" placeholder="Escribe tu nombre completo" required>
+                    </div>
+                </div>
+
+                <div class="field full">
+                    <label for="email">Correo electrónico</label>
+                    <div class="input-wrap">
+                        <span class="field-icon" aria-hidden="true">✉</span>
+                        <input id="email" name="email" type="email" maxlength="160" autocomplete="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                </div>
+
+                <div class="document-grid">
+                    <div class="field">
+                        <label for="documentType">Tipo de documento</label>
+                        <div class="input-wrap">
+                            <span class="field-icon" aria-hidden="true">▣</span>
+                            <select id="documentType" name="documentType" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="DNI">DNI</option>
+                                <option value="CE">Carné de extranjería (CE)</option>
+                                <option value="PASAPORTE">Pasaporte</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="documentNumber">Número de documento</label>
+                        <div class="input-wrap">
+                            <span class="field-icon" aria-hidden="true">#</span>
+                            <input id="documentNumber" name="documentNumber" type="text" maxlength="12" autocomplete="off" placeholder="Ingresa tu documento" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field full">
+                    <label for="phone">Número de celular</label>
+                    <div class="input-wrap">
+                        <span class="field-icon" aria-hidden="true">⌕</span>
+                        <input id="phone" name="phone" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" placeholder="+51 987 654 321" required>
+                    </div>
+                </div>
+
+                <div class="field full">
+                    <label for="instagram">Tu Instagram</label>
+                    <div class="input-wrap">
+                        <span class="field-icon instagram-symbol" aria-hidden="true">◎</span>
+                        <input id="instagram" name="instagram" type="text" maxlength="80" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="@tuusuario" required>
+                    </div>
+                </div>
+
+                <label class="check action-check">
+                    <input id="followsInstagram" type="checkbox" required>
+                    <span class="custom-check" aria-hidden="true"></span>
+                    <span>Confirmo que sigo a <a id="followInstagramLink" href="#" target="_blank" rel="noopener">@alteregoperu</a>.</span>
+                </label>
+
+                <div class="field full">
+                    <label for="sharedWith">Instagram de tus 3 amigos</label>
+                    <div class="input-wrap textarea-wrap">
+                        <span class="field-icon" aria-hidden="true">◎</span>
+                        <textarea id="sharedWith" name="sharedWith" maxlength="240" rows="3" autocapitalize="none" spellcheck="false" placeholder="@ejemplo1 @ejemplo2 @ejemplo3" aria-describedby="sharedWithHelp" required></textarea>
+                    </div>
+                    <small id="sharedWithHelp" class="field-help">Escribe tres cuentas separadas por espacios, por ejemplo: @ejemplo1 @ejemplo2 @ejemplo3.</small>
+                </div>
+
+                <label class="check terms-check">
+                    <input id="consent" type="checkbox" required>
+                    <span class="custom-check" aria-hidden="true"></span>
+                    <span>Acepto los <a href="#legales">términos y condiciones</a>.</span>
+                </label>
+
+                <button class="btn btn-primary campaign-submit" id="submitBtn" type="submit"><span>ENVIAR Y PARTICIPAR</span></button>
+                <div id="formMessage" class="form-message" aria-live="polite"></div>
+            </form>
+
+            <footer id="legales" class="campaign-legal">
+                <div class="ornament" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+                <h2>LEGALES</h2>
+                <p>Promoción válida según términos y condiciones. La participación será válida únicamente después de completar todos los pasos. ALTER EGO podrá verificar el registro, el seguimiento de la cuenta y el cumplimiento de la dinámica. Aplican restricciones.</p>
+                <small>© <span id="year"></span> ALTER EGO · Campaña promocional</small>
+            </footer>
+        </section>
+    </main>
+
+    <div id="modalBackdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="glass modal">
+            <div class="modal-icon" id="modalIcon">✓</div>
+            <h3 id="modalTitle"></h3>
+            <p id="modalText"></p>
+            <div class="modal-actions">
+                <button id="modalClose" class="btn btn-secondary" type="button">Cerrar</button>
+                <a id="modalInstagram" class="btn btn-primary" target="_blank" rel="noopener">Ir a Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/register.js?v=20260720-three-instagram-fix-1"></script>
+</body>
+</html>

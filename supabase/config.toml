@@ -1,0 +1,9 @@
+project_id = "zlfmyecnetadjugfsyrq"
+
+[functions.register-participant]
+verify_jwt = false
+
+[functions.draw-winner]
+# La función valida internamente la sesión y que el usuario esté en admin_users.
+# Se desactiva la validación del gateway para compatibilidad con claves publishable nuevas.
+verify_jwt = false
